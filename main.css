@@ -1,0 +1,250 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #0a0f1f, #162447, #1f4068);
+    color: #e0e0e0;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Light Mode */
+body.light-mode {
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    color: #1a1a1a;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 60px 0;
+    border-radius: 0 0 40px 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: background 0.5s ease;
+}
+
+/* Header in Light Mode */
+body.light-mode header {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #fff;
+}
+
+.profile {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.profile-section h1 {
+    font-size: 2.4em;
+    margin: 15px 0 5px;
+}
+
+.profile-section p {
+    font-size: 1.1em;
+    color: #cfd8dc;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(0, 114, 255, 0.4);
+    transition: all 0.3s ease;
+    margin: 0 8px;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #00e6e6, #0088ff);
+    box-shadow: 0 4px 14px rgba(0, 255, 255, 0.6);
+    transform: translateY(-3px);
+}
+
+body.light-mode .btn {
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+    color: white;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+    background: rgba(255, 255, 255, 0.05);
+    margin: 30px auto;
+    width: 85%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease, background 0.5s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+body.light-mode section {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Section Titles */
+section h2 {
+    text-align: center;
+    color: #00e5ff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+body.light-mode section h2 {
+    color: #0077ff;
+}
+
+/* =========================
+   SKILLS
+========================= */
+.skill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+}
+
+.skill-box {
+    background: linear-gradient(135deg, #004d7a, #008793, #00bf72);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    background: linear-gradient(135deg, #00e6e6, #0077ff);
+    transform: scale(1.1);
+}
+
+body.light-mode .skill-box {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+/* =========================
+   PROJECTS
+========================= */
+.project {
+    background: linear-gradient(145deg, #1a2a3a, #243b55);
+    padding: 15px;
+    margin: 12px 0;
+    border-left: 5px solid #00e5ff;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateX(8px);
+    background: linear-gradient(145deg, #182533, #2b3f5a);
+}
+
+body.light-mode .project {
+    background: linear-gradient(145deg, #dfe9f3, #ffffff);
+    border-left-color: #0072ff;
+}
+
+/* =========================
+   CONTACT
+========================= */
+.contact p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.contact a {
+    color: #00e5ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact a:hover {
+    color: #00bcd4;
+}
+
+body.light-mode .contact a {
+    color: #0077ff;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    text-align: center;
+    background: linear-gradient(90deg, #001f3f, #003366);
+    color: #bbb;
+    padding: 15px;
+    border-radius: 20px 20px 0 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+body.light-mode footer {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+}
+
+/* =========================
+   SCROLL TO TOP
+========================= */
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+#topBtn:hover {
+    background: linear-gradient(90deg, #00e6e6, #0088ff);
+}
+
+/* =========================
+   THEME TOGGLE
+========================= */
+#themeToggle {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    background: linear-gradient(90deg, #00e5ff, #00bcd4);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+#themeToggle:hover {
+    transform: rotate(15deg);
+    background: linear-gradient(90deg, #00bcd4, #00e6e6);
+}
