@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pankaj Jangra | Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="profile-section">
+            <img src="pankaj.png" alt="Pankaj Jangra" class="profile">
+            <h1>Pankaj Jangra</h1>
+            <p>MCA Student | Aspiring Data Scientist | DSA Learner</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/pankaj-jangra-7ba223272" target="_blank" class="btn">LinkedIn</a>
+                <a href="https://github.com/pankajjangra" target="_blank" class="btn">GitHub</a>
+                <a href="https://leetcode.com/COSMOS1" target="_blank" class="btn">LeetCode</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Pankaj, currently pursuing MCA at MANIT Bhopal. I’m passionate about Data Structures, Algorithms, and exploring the world of Data Science. I enjoy building logic-based projects and continuously improving my problem-solving skills.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>Technical Skills</h2>
+        <div class="skill-grid">
+            <div class="skill-box">C</div>
+            <div class="skill-box">C++</div>
+            <div class="skill-box">Python</div>
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">DSA</div>
+            <div class="skill-box">Problem Solving</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Number Guessing Game (Python)</h3>
+            <p>A fun Python terminal game where the computer generates a random number and the user tries to guess it. Includes score tracking and logical hints.</p>
+        </div>
+        <div class="project">
+            <h3>Student Management System (C++)</h3>
+            <p>A console-based C++ project that manages student data such as names, roll numbers, and marks using file handling and classes.</p>
+        </div>
+        <div class="project">
+            <h3>Personal Portfolio Website (HTML, CSS, JS)</h3>
+            <p>A responsive portfolio showcasing my education, skills, and projects with dark mode and scroll features.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:pankajjangra202004@gmail.com">pankajjangra202004@gmail.com</a></p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/pankaj-jangra-7ba223272" target="_blank" class="btn">LinkedIn</a>
+            <a href="https://leetcode.com/COSMOS1" target="_blank" class="btn">LeetCode</a>
+            <a href="https://github.com/pankajjangra" target="_blank" class="btn">GitHub</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Pankaj Jangra | All Rights Reserved</p>
+    </footer>
+
+    <button id="topBtn">↑</button>
+    <button id="themeToggle">🌙</button>
+
+    <!-- JavaScript -->
+    <script>
+        // Scroll to top
+        const topBtn = document.getElementById("topBtn");
+        window.onscroll = function() {
+            topBtn.style.display = (document.documentElement.scrollTop > 100) ? "block" : "none";
+        };
+        topBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        // Dark Mode
+        const toggleBtn = document.getElementById("themeToggle");
+        toggleBtn.onclick = () => {
+            document.body.classList.toggle("dark-mode");
+            toggleBtn.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+        };
+    </script>
+</body>
+</html>
